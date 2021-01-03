@@ -3,15 +3,12 @@
     <div class="form__header">
       Поиск гостиницы в седоне
     </div>
+
   </form>
 </template>
 
 <script>
 export default {
-name: "appSearchForm"
+  name: "appSearchForm"
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,0 +1,18 @@
+$form-width: 568px;
+$form-header-height: 86px;
+
+.form {
+
+  &__header {
+    min-height: $form-header-height;
+    background-color: $brown;
+    width: $form-width;
+    margin: 0 auto;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 700;
+  }
+}
