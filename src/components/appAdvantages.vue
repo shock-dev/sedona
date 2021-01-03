@@ -30,6 +30,16 @@ export default {
   name: "appAdvantages",
   components: {AppAdvantagesImageItems},
   data: () => ({
+    topContents: [
+      {
+        title: 'Седона — небольшой городок в Аризоне, заслуживающий большего!',
+        description: 'Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!'
+      },
+      {
+        title: 'Заинтересовались?',
+        description: 'Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне'
+      }
+    ],
     imageItems: [
       {
         title: 'Настоящий городок',
@@ -43,6 +53,40 @@ export default {
         number: 2,
         imageUrl: require('@/assets/img/advantages-bg-2.jpg')
       }
+    ],
+    items: [
+      {
+        imageUrl: require('@/assets/img/home-icon.svg'),
+        title: 'Жильё',
+        description: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!'
+      },
+      {
+        imageUrl: require('@/assets/img/hamburger-icon.svg'),
+        title: 'Еда',
+        description: 'Всегда заказывайте фирменный бургер, вы не разочаруетесь!'
+      },
+      {
+        imageUrl: require('@/assets/img/gift-icon.svg'),
+        title: 'Сувениры',
+        description: 'Не только китайского, но и местного производства!'
+      }
+    ],
+    itemsWithoutImage: [
+      {
+        title: 'Небольшая площадь',
+        number: 3,
+        description: 'Все достопримечательности находятся очень близко'
+      },
+      {
+        title: 'Красивая дорога',
+        number: 4,
+        description: 'Ехать в Седону из Лас-Вегаса совсем не скучно!'
+      },
+      {
+        title: 'Мало туристов',
+        number: 5,
+        description: 'Большинство едет в гранд каньон и толпится там'
+      },
     ]
   })
 }
