@@ -23,4 +23,11 @@ $form-header-height: 86px;
     background-size: cover;
     min-height: 464px;
   }
+
+  &__body {
+    background-color: $white;
+    padding: 54px;
+    max-width: $form-width;
+    margin: 0 auto;
+  }
 }
