@@ -13,6 +13,10 @@
       :imageUrl="imageItems[0].imageUrl"
     />
 
+    <app-advantages-items
+      :items="items"
+    />
+
     <app-advantages-image-items
         :key="imageItems[1].title"
         :title="imageItems[1].title"
@@ -21,14 +25,31 @@
         :imageUrl="imageItems[1].imageUrl"
         :position="1"
     />
+
+    <app-advantages-items
+        :items="itemsWithoutImage"
+        :bgc="'gray'"
+    />
+
+    <app-top-content
+        :title="topContents[1].title"
+        :description="topContents[1].description"
+    />
   </div>
 </template>
 
 <script>
 import AppAdvantagesImageItems from "@/components/appAdvantagesImageItems";
+import AppTopContent from "@/components/appTopContent";
+import AppAdvantagesItems from "@/components/appAdvantagesItems";
+
 export default {
   name: "appAdvantages",
-  components: {AppAdvantagesImageItems},
+  components: {
+    AppAdvantagesItems,
+    AppTopContent,
+    AppAdvantagesImageItems
+  },
   data: () => ({
     topContents: [
       {
