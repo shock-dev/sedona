@@ -15,4 +15,12 @@ $form-header-height: 86px;
     font-size: 21px;
     font-weight: 700;
   }
+
+  &__map {
+    background-image: url('~@/assets/img/map.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 464px;
+  }
 }
