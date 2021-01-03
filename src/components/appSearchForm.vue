@@ -5,7 +5,13 @@
     </div>
     <div class="form__map">
       <div class="form__body">
-        <app-form-text-input/>
+        <app-form-text-input
+          v-for="({ title, value }, index) in textInputs"
+          :key="index"
+          :title="title"
+          :value="value"
+          @sendValueToParent="getValueFromChild(index, $event)"
+        />
       </div>
     </div>
   </form>
