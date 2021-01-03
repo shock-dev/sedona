@@ -1,0 +1,18 @@
+.advantages {
+
+  &__top {
+    padding: 58px 0;
+    text-align: center;
+    max-width: 484px;
+    margin: 0 auto;
+
+    &-title {
+      font-size: 21px;
+      margin-bottom: 25px;
+    }
+
+    &-text {
+      color: $light-black;
+    }
+  }
+}
