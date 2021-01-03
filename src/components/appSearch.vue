@@ -4,14 +4,21 @@
       :title="topContent.title"
       :description="topContent.description"
     />
+
+    <app-search-form/>
   </div>
 </template>
 
 <script>
 import AppTopContent from "@/components/appTopContent";
+import AppSearchForm from "@/components/appSearchForm";
+
 export default {
   name: "appSearch",
-  components: {AppTopContent},
+  components: {
+    AppSearchForm,
+    AppTopContent
+  },
   data: () => ({
     topContent: {
       title: 'Заинтересовались?',
