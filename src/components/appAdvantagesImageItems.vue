@@ -1,6 +1,6 @@
 <template>
-  <div class="advantages__items image" :class="{ right: position !== 0 }">
-    <div class="advantages__item">
+  <div class="advantages__items" :class="{ right: position !== 0 }">
+    <div class="advantages__item image">
       <div class="advantages__item-title">{{ title }}</div>
       <div class="advantages__item-num">{{ getNumber }}</div>
       <div class="advantages__item-text">{{ description }}</div>
