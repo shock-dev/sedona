@@ -1,21 +1,5 @@
 .advantages {
 
-  &__top {
-    padding: 58px 0;
-    text-align: center;
-    max-width: 484px;
-    margin: 0 auto;
-
-    &-title {
-      font-size: 21px;
-      margin-bottom: 25px;
-    }
-
-    &-text {
-      color: $light-black;
-    }
-  }
-
   &__items {
     display: flex;
 
@@ -24,22 +8,39 @@
     }
   }
 
+  &__items.material {
+    .advantages__item {
+      padding: 56px 70px 80px;
+
+      &-title {
+        margin: 28px auto;
+      }
+    }
+  }
+
+  .gray {
+    background-color: $gray;
+  }
+
   &__item {
     width: calc(100% / 3);
-    background-color: $blue;
-    color: $white;
     text-align: center;
-    padding: 43px 45px 50px;
 
     &-title {
       font-size: 21px;
-      max-width: 200px;
+      max-width: 150px;
       margin: 0 auto;
       font-weight: 700;
     }
 
     &-num {
       margin: 20px 0;
+    }
+
+    &.image {
+      background-color: $blue;
+      padding: 43px 45px 50px;
+      color: $white;
     }
   }
 
