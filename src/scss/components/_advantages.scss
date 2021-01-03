@@ -15,4 +15,38 @@
       color: $light-black;
     }
   }
+
+  &__items {
+    display: flex;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    background-color: $blue;
+    color: $white;
+    text-align: center;
+    padding: 43px 45px 50px;
+
+    &-title {
+      font-size: 21px;
+      max-width: 200px;
+      margin: 0 auto;
+      font-weight: 700;
+    }
+
+    &-num {
+      margin: 20px 0;
+    }
+  }
+
+  &__img {
+    min-height: 100%;
+    flex-grow: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
