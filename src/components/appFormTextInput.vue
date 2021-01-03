@@ -1,6 +1,7 @@
 <template>
   <label class="form__label">
-
+    <span class="form__text">Дата заезда</span>
+    <input class="form__input" type="text">
   </label>
 </template>
 
@@ -9,7 +10,3 @@ export default {
   name: "appFormTextInput"
 }
 </script>
-
-<style scoped>
-
-</style>
