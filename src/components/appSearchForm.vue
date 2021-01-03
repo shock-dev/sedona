@@ -18,6 +18,23 @@ export default {
   name: "appSearchForm",
   components: {
     AppFormTextInput
+  },
+  data: () => ({
+    textInputs: [
+      {
+        title: 'Дата заезда:',
+        value: '24 апреля 2017'
+      },
+      {
+        title: 'Дата выезда:',
+        value: '4 июля 2017'
+      }
+    ]
+  }),
+  methods: {
+    getValueFromChild(index, data) {
+      this.$set(this.textInputs[index], 'value', data)
+    }
   }
 }
 </script>
