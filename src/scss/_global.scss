@@ -16,6 +16,7 @@ body {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  background-color: $gray;
 }
 
 h1,
@@ -43,6 +44,12 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .btn-reset {
