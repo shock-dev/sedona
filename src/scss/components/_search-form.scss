@@ -30,4 +30,40 @@ $form-header-height: 86px;
     max-width: $form-width;
     margin: 0 auto;
   }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url('~@/assets/img/calendar-icon.svg');
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 23px;
+    }
+  }
+
+  &__text {
+    margin-right: 20px;
+  }
+
+  &__input {
+    flex-grow: 1;
+    min-height: 38px;
+    background-color: #EBEBEB;
+    border: 2px solid #EBEBEB;
+    outline: none;
+    padding: 0 36px 0 15px;
+
+    &:focus {
+      background-color: $white;
+    }
+  }
 }
