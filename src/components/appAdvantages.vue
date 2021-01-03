@@ -1,8 +1,8 @@
 <template>
   <div class="advantages">
     <app-top-content
-      :title="topContents[0].title"
-      :description="topContents[0].description"
+      :title="topContent.title"
+      :description="topContent.description"
     />
 
     <app-advantages-image-items
@@ -29,11 +29,6 @@
     <app-advantages-items
         :items="itemsWithoutImage"
         :bgc="'gray'"
-    />
-
-    <app-top-content
-        :title="topContents[1].title"
-        :description="topContents[1].description"
     />
   </div>
 </template>
