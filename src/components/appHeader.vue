@@ -16,7 +16,7 @@
         <router-link class="header__link" to="#">Карта штата</router-link>
       </li>
       <li class="header__item">
-        <router-link class="header__link" to="#">Гостиницы</router-link>
+        <router-link class="header__link" to="/hotels">Гостиницы</router-link>
       </li>
     </ul>
   </header>
