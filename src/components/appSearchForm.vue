@@ -35,6 +35,16 @@ export default {
         title: 'Дата выезда:',
         value: '4 июля 2017'
       }
+    ],
+    numInputs: [
+      {
+        title: 'Взрослые:',
+        value: 2
+      },
+      {
+        title: 'Дети:',
+        value: 0
+      }
     ]
   }),
   methods: {
