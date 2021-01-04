@@ -73,6 +73,7 @@ $form-header-height: 86px;
   &__num-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 55px;
   }
 
   &__num-col {
@@ -86,6 +87,27 @@ $form-header-height: 86px;
 
     .form__text {
       width: 70px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: $blue;
+    color: $white;
+    font-weight: 700;
+    font-size: 21px;
+    transition: background-color .2s;
+    outline: none;
+
+    &:hover {
+      background-color: #669EC0;
+    }
+
+    &:active,
+    &:focus {
+      color: rgba($white, .3);
     }
   }
 }
