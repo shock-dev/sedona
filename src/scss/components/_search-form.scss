@@ -53,6 +53,7 @@ $form-header-height: 86px;
 
   &__text {
     width: 112px;
+    font-weight: 700;
   }
 
   &__input {
@@ -68,4 +69,58 @@ $form-header-height: 86px;
       background-color: $white;
     }
   }
+
+  &__num-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__num-col {
+    width: 46%;
+    display: flex;
+    align-items: center;
+  }
+
+  .small {
+    justify-content: flex-end;
+
+    .form__text {
+      width: 70px;
+    }
+  }
+}
+
+.input-number {
+  display: flex;
+  align-items: center;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  color: #424348;
+  font-size: 14px;
+  text-align: center;
+  width: calc(33px * 3);
+}
+
+.input-number__input {
+  width: 32px;
+  height: 32px;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  background: #F2F2F2;
+  font-weight: 700;
+}
+
+.input-number__minus,
+.input-number__plus {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+  font-size: 22px;
+  color: #707070;
 }
