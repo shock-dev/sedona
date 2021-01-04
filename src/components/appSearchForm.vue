@@ -12,6 +12,16 @@
           :value="value"
           @sendValueToParent="getValueFromChild(index, $event)"
         />
+        <div class="form__num-row">
+          <app-form-number-input
+            v-for="({ title, value }, index) in numInputs"
+            :key="index"
+            :title="title"
+            :value="value"
+            @minus="minusInParent(index)"
+            @plus="plusInParent(index)"
+          />
+        </div>
       </div>
     </div>
   </form>
@@ -19,10 +29,12 @@
 
 <script>
 import AppFormTextInput from "@/components/appFormTextInput";
+import AppFormNumberInput from "@/components/appFormNumberInput";
 
 export default {
   name: "appSearchForm",
   components: {
+    AppFormNumberInput,
     AppFormTextInput
   },
   data: () => ({
