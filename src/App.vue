@@ -4,6 +4,7 @@
       <div class="shadow">
         <app-header/>
         <router-view/>
+        <app-footer/>
       </div>
     </div>
   </div>
@@ -11,8 +12,13 @@
 
 <script>
 import AppHeader from "@/components/appHeader";
+import AppFooter from "@/components/appFooter";
+
 export default {
-  components: {AppHeader}
+  components: {
+    AppFooter,
+    AppHeader
+  }
 }
 </script>
 
