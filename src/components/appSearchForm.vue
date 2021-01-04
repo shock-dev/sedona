@@ -1,5 +1,5 @@
 <template>
-  <form class="search__form form">
+  <form class="search__form form" @submit.prevent="">
     <div class="form__header">
       Поиск гостиницы в седоне
     </div>
@@ -22,6 +22,7 @@
             @plus="plusInParent(index)"
           />
         </div>
+        <button class="form__btn btn-reset">Найти</button>
       </div>
     </div>
   </form>
