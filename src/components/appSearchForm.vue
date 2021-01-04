@@ -62,6 +62,16 @@ export default {
   methods: {
     getValueFromChild(index, data) {
       this.$set(this.textInputs[index], 'value', data)
+    },
+    minusInParent(index) {
+      if (this.numInputs[index].value > 0) {
+        this.numInputs[index].value--
+      }
+    },
+    plusInParent(index) {
+      if (this.numInputs[index].value < 20) {
+        this.numInputs[index].value++
+      }
     }
   }
 }
