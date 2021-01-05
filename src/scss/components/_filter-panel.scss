@@ -71,5 +71,31 @@
       font-weight: 400;
     }
   }
+
+  &__price-box {
+    display: flex;
+    padding: 8px;
+    border: 2px solid $white;
+    width: 318px;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 22px;
+      width: 2px;
+      background-color: $white;
+      top: 50%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transform: translateY(-50%);
+    }
+
+    &__item {
+      width: 50%;
+    }
+  }
 }
 
