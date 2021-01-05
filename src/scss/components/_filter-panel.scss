@@ -72,13 +72,18 @@
     }
   }
 
+  &__price {
+    width: 318px;
+  }
+
   &__price-box {
     display: flex;
     padding: 8px;
     border: 2px solid $white;
-    width: 318px;
+    width: 100%;
     text-align: center;
     position: relative;
+    margin-bottom: 15px;
 
     &:after {
       content: '';
