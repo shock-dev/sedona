@@ -29,6 +29,17 @@
   &__title {
     font-size: 21px;
     font-weight: 700;
+    transition: color .2s;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+    }
+
+    &:active {
+      color: rgba($blue, .3);
+    }
   }
 
   &__col-first {
@@ -55,12 +66,12 @@
     &.blue {
       background-color: $blue;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: #5496BD;
       }
 
-      &:active,
-      &:focus {
+      &:active {
         background-color: #5496BD;
         color: rgba($white, .3);
       }
@@ -69,12 +80,12 @@
     &.brown {
       background-color: $brown;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: #604E43;
       }
 
-      &:active,
-      &:focus {
+      &:active {
         background-color: #604E43;
         color: rgba($white, .3);
       }

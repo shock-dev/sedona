@@ -21,13 +21,14 @@
     height: 46px;
     margin: 0 3px;
     transition: background-color .2s;
+    outline: none;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #669EC0;
     }
 
-    &:active,
-    &:focus {
+    &:active {
       background-color: #669EC0;
 
       img {

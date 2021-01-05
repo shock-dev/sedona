@@ -7,7 +7,7 @@
             <img src="../assets/img/hotel-1.jpg" alt="">
           </div>
           <div class="card__info">
-            <div class="card__info-head card__title">Amara Resort & Spa</div>
+            <router-link class="card__info-head card__title" to="#">Amara Resort & Spa</router-link>
             <div class="card__info-body">
               <div class="card__col-first">Гостиница</div>
               <div class="card__col-second">От 4000 Р.</div>
