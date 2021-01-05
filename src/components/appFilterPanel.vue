@@ -1,10 +1,14 @@
 <template>
   <div class="filter-panel">
-    <div class="filter-panel__checkboxes">
-      <app-filter-panel-checkboxes-col/>
-      <app-filter-panel-checkboxes-col/>
+    <div class="hotels-container">
+      <div class="filter-panel__inner">
+        <div class="filter-panel__checkboxes">
+          <app-filter-panel-checkboxes-col/>
+          <app-filter-panel-checkboxes-col/>
+        </div>
+        <app-filter-panel-price/>
+      </div>
     </div>
-    <app-filter-panel-price/>
   </div>
 </template>
 
