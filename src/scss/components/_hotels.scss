@@ -49,13 +49,35 @@
     padding: 5px 0;
     color: $white;
     font-weight: 700;
+    transition: all .2s;
+    outline: none;
 
     &.blue {
       background-color: $blue;
+
+      &:hover {
+        background-color: #5496BD;
+      }
+
+      &:active,
+      &:focus {
+        background-color: #5496BD;
+        color: rgba($white, .3);
+      }
     }
 
     &.brown {
       background-color: $brown;
+
+      &:hover {
+        background-color: #604E43;
+      }
+
+      &:active,
+      &:focus {
+        background-color: #604E43;
+        color: rgba($white, .3);
+      }
     }
   }
 
