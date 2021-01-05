@@ -5,6 +5,22 @@
       <div class="filter-panel__price-box__item">от 0</div>
       <div class="filter-panel__price-box__item">До 3000</div>
     </div>
+    <div class="range-slider__wrapper">
+      <vue-range-slider
+          :height="2"
+          v-model="value"
+          :dot-size="20"
+          :tooltip="false"
+          :bg-style="{
+            backgroundColor: '#8f8f8f'
+          }"
+          :process-style="{
+            backgroundColor: '#fff'
+          }"
+          :min="0"
+          :max="3000"
+      ></vue-range-slider>
+    </div>
   </div>
 </template>
 
