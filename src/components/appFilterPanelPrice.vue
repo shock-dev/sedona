@@ -9,10 +9,6 @@
 
 <script>
 export default {
-name: "appFilterPanelPrice"
+  name: "appFilterPanelPrice"
 }
 </script>
-
-<style scoped>
-
-</style>
