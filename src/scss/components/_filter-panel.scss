@@ -18,6 +18,7 @@
   }
 
   &__title {
+    text-align: left;
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -74,6 +75,7 @@
 
   &__price {
     width: 318px;
+    text-align: center;
   }
 
   &__price-box {
@@ -106,6 +108,19 @@
 
   .range-slider__wrapper {
     padding: 0;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    border: 2px solid $white;
+    padding: 9px 34px;
+    transition: all .2s;
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      color: $black;
+    }
   }
 
   .slider-dot {

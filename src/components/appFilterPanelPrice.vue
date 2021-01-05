@@ -21,6 +21,7 @@
           :max="3000"
       ></vue-range-slider>
     </div>
+    <button class="filter-panel__btn btn-reset">Показать</button>
   </div>
 </template>
 
@@ -32,7 +33,7 @@ export default {
   name: "appFilterPanelPrice",
   data() {
     return {
-      value: [0, 2700]
+      value: [0, 3000]
     }
   },
   components: {
