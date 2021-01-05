@@ -1,6 +1,8 @@
 <template>
   <div class="hotels">
     <app-filter-panel/>
+    <app-sort/>
+    <app-hotels/>
   </div>
 </template>
 
