@@ -1,6 +1,4 @@
 .filter-panel {
-  display: flex;
-  justify-content: space-between;
   background-image: url('~@/assets/img/filter-panel-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -8,6 +6,11 @@
   padding: 27px 72px;
   color: $white;
   font-weight: 700;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__checkboxes {
     display: flex;
