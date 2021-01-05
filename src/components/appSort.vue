@@ -3,7 +3,7 @@
     <div class="hotels-container">
       <div class="sort__inner">
         <div class="sort__left">
-          <div class="sort__found">Найдено: 3</div>
+          <div class="sort__found">Найдено: {{ count }}</div>
           <div class="sort__name">Сортировка:</div>
           <ul class="sort__list">
             <li class="sort__list-item active"><a class="sort__list-link" href="#">По цене</a></li>
@@ -21,7 +21,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  name: "appSort"
+  name: "appSort",
+  computed: {
+    ...mapGetters('hotels', ['count'])
+  }
 }
 </script>

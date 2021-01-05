@@ -4,13 +4,13 @@
       <div class="card__inner">
         <div class="card__general">
           <div class="card__img">
-            <img src="../assets/img/hotel-1.jpg" alt="">
+            <img :src="imageUrl" alt="">
           </div>
           <div class="card__info">
-            <router-link class="card__info-head card__title" to="#">Amara Resort & Spa</router-link>
+            <router-link class="card__info-head card__title" to="#">{{ title }}</router-link>
             <div class="card__info-body">
-              <div class="card__col-first">Гостиница</div>
-              <div class="card__col-second">От 4000 Р.</div>
+              <div class="card__col-first">{{ type.ru }}</div>
+              <div class="card__col-second">От {{ price }} Р.</div>
             </div>
             <div class="card__info-footer card__buttons">
               <button class="card__col-first btn-reset card__btn blue">Подробнее</button>
@@ -20,12 +20,10 @@
         </div>
         <div class="card__rate">
           <ul class="card__rate-list">
-            <li class="card__rate-list__item"></li>
-            <li class="card__rate-list__item"></li>
-            <li class="card__rate-list__item"></li>
+            <li class="card__rate-list__item" v-for="n in stars" :key="n"></li>
           </ul>
 
-          <div class="card__rate-num">Рейтинг: 8,5</div>
+          <div class="card__rate-num">Рейтинг: {{ rating }}</div>
         </div>
       </div>
     </div>
@@ -34,6 +32,17 @@
 
 <script>
 export default {
-  name: "appHotelsCard"
+  name: "appHotelsCard",
+  props: {
+    title: String,
+    price: Number,
+    stars: Number,
+    type: {
+      type: Object,
+      default: () => {}
+    },
+    rating: String,
+    imageUrl: String
+  }
 }
 </script>
