@@ -6,38 +6,14 @@
       <div class="filter-panel__price-box__item">До 3000</div>
     </div>
     <div class="range-slider__wrapper">
-      <vue-range-slider
-          :height="2"
-          v-model="value"
-          :dot-size="20"
-          :tooltip="false"
-          :bg-style="{
-            backgroundColor: '#8f8f8f'
-          }"
-          :process-style="{
-            backgroundColor: '#fff'
-          }"
-          :min="0"
-          :max="3000"
-      ></vue-range-slider>
+
     </div>
     <button class="filter-panel__btn btn-reset">Показать</button>
   </div>
 </template>
 
 <script>
-import 'vue-range-component/dist/vue-range-slider.css'
-import VueRangeSlider from 'vue-range-component'
-
 export default {
-  name: "appFilterPanelPrice",
-  data() {
-    return {
-      value: [0, 3000]
-    }
-  },
-  components: {
-    VueRangeSlider
-  }
+  name: "appFilterPanelPrice"
 }
 </script>

@@ -106,11 +106,6 @@
     }
   }
 
-  .range-slider__wrapper {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
   &__btn {
     border: 2px solid $white;
     padding: 9px 34px;
@@ -120,21 +115,6 @@
     &:focus {
       background-color: $white;
       color: $black;
-    }
-  }
-
-  .slider-dot {
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      background-color: #ABABAB;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-radius: 50%;
     }
   }
 }
