@@ -21,7 +21,11 @@
         <div class="card__rate">
           <ul class="card__rate-list">
             <li class="card__rate-list__item"></li>
+            <li class="card__rate-list__item"></li>
+            <li class="card__rate-list__item"></li>
           </ul>
+
+          <div class="card__rate-num">Рейтинг: 8,5</div>
         </div>
       </div>
     </div>
