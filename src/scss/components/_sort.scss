@@ -38,6 +38,18 @@
         color: #a0a0a0;
         position: relative;
 
+        &:hover {
+          color: $blue;
+        }
+
+        &:active {
+          color: $black;
+
+          &:after {
+            display: none;
+          }
+        }
+
         &:after {
           content: '';
           position: absolute;

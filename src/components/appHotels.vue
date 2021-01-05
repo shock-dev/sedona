@@ -1,8 +1,6 @@
 <template>
   <div class="hotels">
     <app-hotels-card/>
-    <app-hotels-card/>
-    <app-hotels-card/>
   </div>
 </template>
 
