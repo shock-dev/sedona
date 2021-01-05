@@ -9,7 +9,18 @@
 </template>
 
 <script>
+import 'vue-range-component/dist/vue-range-slider.css'
+import VueRangeSlider from 'vue-range-component'
+
 export default {
-  name: "appFilterPanelPrice"
+  name: "appFilterPanelPrice",
+  data() {
+    return {
+      value: [0, 2700]
+    }
+  },
+  components: {
+    VueRangeSlider
+  }
 }
 </script>
