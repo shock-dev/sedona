@@ -11,7 +11,3 @@ export default {
   name: "appFilterPanelCheckboxLabel"
 }
 </script>
-
-<style scoped>
-
-</style>
