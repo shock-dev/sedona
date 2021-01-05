@@ -52,9 +52,12 @@ img {
   padding: 0 15px;
 }
 
-.shadow {
+.help-wrapper {
   box-shadow: 0 0 10px #aab3b3;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .btn-reset {
