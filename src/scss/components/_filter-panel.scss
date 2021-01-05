@@ -1,7 +1,10 @@
 .filter-panel {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-image: url('~@/assets/img/filter-panel-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 27px 72px;
   color: $white;
   font-weight: 700;
