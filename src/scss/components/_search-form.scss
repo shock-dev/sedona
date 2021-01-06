@@ -40,12 +40,13 @@ $form-header-height: 86px;
   }
 
   &__text {
-    width: 112px;
+    width: 155px;
     font-weight: 700;
+    white-space: nowrap;
   }
 
   &__input {
-    flex-grow: 1;
+    width: 100%;
     min-height: 38px;
     background-color: #EBEBEB;
     border: 2px solid #EBEBEB;
@@ -123,6 +124,10 @@ $form-header-height: 86px;
     &:focus {
       color: rgba($white, .3);
     }
+  }
+
+  .mx-datepicker {
+    width: 100%;
   }
 }
 
