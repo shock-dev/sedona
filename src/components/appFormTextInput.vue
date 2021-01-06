@@ -2,12 +2,18 @@
   <div>
     <label class="form__label">
       <span class="form__text">{{ title }}</span>
-      <input class="form__input" type="text" @input="sendValue" :value="value">
-      <button class="btn-reset form__calendar-btn">
-        <svg>
-          <use href="../assets/img/sprite.svg#calendar"></use>
-        </svg>
-      </button>
+      <date-picker
+          v-model="time"
+      >
+        <template slot="input">
+            <input class="form__input" type="text" @input="sendValue" :value="value">
+        </template>
+        <template slot="icon-calendar">
+          <svg>
+            <use href="../assets/img/sprite.svg#calendar"></use>
+          </svg>
+        </template>
+      </date-picker>
     </label>
   </div>
 </template>
