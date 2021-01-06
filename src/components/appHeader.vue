@@ -7,7 +7,7 @@
       <li class="header__item">
         <router-link class="header__link" to="#">Фото и видео</router-link>
       </li>
-      <li class="header__item">
+      <li class="header__item logo">
         <router-link class="header__link" to="/">
           <img class="header__logo" src="../assets/img/logo.svg" alt="Logo">
         </router-link>
