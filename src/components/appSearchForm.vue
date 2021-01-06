@@ -1,7 +1,9 @@
 <template>
   <form class="search__form form" @submit.prevent="">
-    <div class="form__header">
-      Поиск гостиницы в седоне
+    <div class="form__header-wrapper">
+      <div class="form__header">
+        Поиск гостиницы в седоне
+      </div>
     </div>
     <div class="form__map">
       <div class="form__body">
