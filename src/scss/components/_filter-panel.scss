@@ -120,5 +120,45 @@
       color: $black;
     }
   }
+
+  .range-slider {
+
+    &__wrapper {
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+
+    &__dot {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border-radius: 50%;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #ABABAB;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #ABABAB;
+        left: 0;
+        bottom: -2.5px;
+        z-index: -1;
+      }
+    }
+  }
 }
 
