@@ -181,3 +181,29 @@
     min-height: 60px;
   }
 }
+
+@media (max-width: 400px) {
+  .hotels-container {
+    padding: 0 10px;
+  }
+
+  .filter-panel {
+    font-size: 12px;
+  }
+
+  .filter-panel__price {
+    width: 100%;
+  }
+
+  .filter-panel__checkboxes {
+    width: 100%;
+  }
+
+  .filter-panel__title {
+    font-size: 14px;
+  }
+
+  .filter-panel__checkboxes-col:not(:last-child) {
+    margin-right: 50px;
+  }
+}
