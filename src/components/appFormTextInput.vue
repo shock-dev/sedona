@@ -1,20 +1,18 @@
 <template>
-  <div>
-    <label class="form__label">
-      <span class="form__text">{{ title }}</span>
-      <date-picker
-          v-model="time"
-      >
-        <template slot="input">
-            <input class="form__input" type="text" @input="sendValue" :value="value">
-        </template>
-        <template slot="icon-calendar">
-          <svg>
-            <use href="../assets/img/sprite.svg#calendar"></use>
-          </svg>
-        </template>
-      </date-picker>
-    </label>
+  <div class="form__label">
+    <div class="form__text">{{ title }}</div>
+    <date-picker
+        v-model="time"
+    >
+      <template slot="input">
+          <input class="form__input" type="text" @input="sendValue" :value="value" aria-label="Choose date">
+      </template>
+      <template slot="icon-calendar">
+        <svg>
+          <use href="../assets/img/sprite.svg#calendar"></use>
+        </svg>
+      </template>
+    </date-picker>
   </div>
 </template>
 
