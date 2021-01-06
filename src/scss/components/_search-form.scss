@@ -10,7 +10,8 @@ $form-header-height: 86px;
   &__header {
     min-height: $form-header-height;
     background-color: $brown;
-    width: $form-width;
+    max-width: $form-width;
+    width: 100%;
     margin: 0 auto;
     color: $white;
     display: flex;
@@ -26,6 +27,7 @@ $form-header-height: 86px;
     background-position: center;
     background-size: cover;
     min-height: 464px;
+    padding: 0 15px;
   }
 
   &__body {
