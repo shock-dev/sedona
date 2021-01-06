@@ -59,6 +59,21 @@ $form-header-height: 86px;
     }
   }
 
+  .mx-datepicker svg {
+    fill: $brown;
+    cursor: pointer;
+    transition: fill .2s;
+
+    &:hover,
+    &:focus {
+      fill: $black;
+    }
+
+    &:active {
+      fill: $blue;
+    }
+  }
+
   &__calendar-btn {
     position: absolute;
     outline: none;
