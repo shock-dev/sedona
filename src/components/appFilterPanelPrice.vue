@@ -2,8 +2,8 @@
   <div class="filter-panel__price">
     <div class="filter-panel__title">Стоимость в сутки (Р):</div>
     <div class="filter-panel__price-box">
-      <div class="filter-panel__price-box__item">от 0</div>
-      <div class="filter-panel__price-box__item">До 3000</div>
+      <div class="filter-panel__price-box__item">от {{ price[0] }}</div>
+      <div class="filter-panel__price-box__item">До {{ price[1] }}</div>
     </div>
     <div class="range-slider__wrapper">
       <vue-slider
@@ -34,7 +34,7 @@ export default {
     VueSlider
   },
   data: () => ({
-    price: [500, 2500]
+    price: [0, 3000]
   })
 }
 </script>
