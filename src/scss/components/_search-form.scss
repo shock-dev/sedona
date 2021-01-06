@@ -46,7 +46,7 @@ $form-header-height: 86px;
   }
 
   &__text {
-    width: 155px;
+    min-width: 115px;
     font-weight: 700;
     white-space: nowrap;
   }
@@ -122,7 +122,7 @@ $form-header-height: 86px;
     justify-content: flex-end;
 
     .form__text {
-      width: 70px;
+      min-width: 70px;
     }
   }
 
