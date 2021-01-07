@@ -208,6 +208,13 @@
     flex-direction: column;
     background-color: $white;
     border: 1px solid #bfbfbf;
+    opacity: 0;
+    visibility: hidden;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
 
     &-link {
       padding: 10px;
