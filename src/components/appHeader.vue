@@ -19,6 +19,9 @@
         <router-link class="header__link" to="/hotels">Гостиницы</router-link>
       </li>
     </ul>
+    <button class="burger btn-reset">
+      <span></span>
+    </button>
   </header>
 </template>
 
