@@ -1,3 +1,8 @@
+@media (max-width: 1030px) {
+  .advantages__items.material .advantages__item {
+    padding: 56px 40px 80px;
+  }
+}
 
 @media (max-width: 860px) {
   .filter-panel__checkboxes-col:not(:last-child) {
@@ -50,6 +55,10 @@
   .header .burger {
     display: block;
   }
+
+  .advantages__items.material .advantages__item {
+    padding: 56px 25px 80px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -94,7 +103,17 @@
   }
 
   .advantages__items.material .advantages__item {
-    padding: 20px;
+    padding: 20px 150px;
+  }
+
+  .advantages__item.white {
+    &:first-child {
+      padding-top: 50px;
+    }
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
   }
 
   .advantages__item.gray {
@@ -113,6 +132,13 @@
 
   .card__rate-list {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .advantages__items.material .advantages__item {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
@@ -210,6 +236,11 @@
     margin-bottom: 10px;
   }
 
+  .advantages__items.material .advantages__item {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
 }
 
 @media (max-width: 460px) {
@@ -268,5 +299,12 @@
 
   .filter-panel__checkboxes-col:not(:last-child) {
     margin-right: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .advantages__items.material .advantages__item {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
