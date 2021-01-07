@@ -19,11 +19,11 @@
         <router-link class="header__link" to="/hotels">Гостиницы</router-link>
       </li>
     </ul>
-    <button class="burger btn-reset">
+    <button class="burger btn-reset" @click="isBurgerOpen = !isBurgerOpen">
       <span></span>
     </button>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" :class="{ active: isBurgerOpen }">
       <ul class="mobile-menu__list">
         <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Информация</router-link></li>
         <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Фото и видео</router-link></li>
@@ -36,6 +36,9 @@
 
 <script>
 export default {
-  name: "appHeader"
+  name: "appHeader",
+  data: () => ({
+    isBurgerOpen: false
+  })
 }
 </script>
