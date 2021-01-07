@@ -18,8 +18,8 @@
     justify-content: center;
   }
 
-  .header__item {
-    width: 100%;
+  .logo {
+    width: 160px;
   }
 
   .intro {
@@ -164,6 +164,10 @@
 
   .sort__list {
     display: none;
+  }
+
+  .logo {
+    width: 130px;
   }
 }
 
