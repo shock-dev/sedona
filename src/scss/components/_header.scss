@@ -74,8 +74,6 @@
 }
 
 .mobile-menu {
-  border-top: 1px solid $blue;
-  border-bottom: 1px solid $blue;
   position: absolute;
   z-index: 100;
   background-color: $white;
@@ -84,6 +82,17 @@
   display: none;
   justify-content: center;
   text-align: center;
+  padding: 30px 20px;
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  opacity: 0;
+  top: calc(100% + 20px);
+  transition: opacity .3s, top .3s;
+
+  &.active {
+    top: 100%;
+    opacity: 1;
+  }
 
   &__list {
     width: 50%;
