@@ -72,3 +72,27 @@
     }
   }
 }
+
+.mobile-menu {
+  border-top: 1px solid $blue;
+  border-bottom: 1px solid $blue;
+  position: absolute;
+  z-index: 100;
+  background-color: $white;
+  color: $blue;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  &__list {
+    width: 50%;
+  }
+
+  &__link {
+    width: 100%;
+    font-weight: 700;
+    padding: 10px;
+  }
+}
