@@ -1,5 +1,6 @@
 .header {
   height: 56px;
+  position: relative;
 
   &__list {
     display: flex;
@@ -29,5 +30,45 @@
     position: absolute;
     top: 0;
     z-index: 100;
+  }
+
+  .burger {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    background-color: #e5efff;
+    border-radius: 3px;
+    border: .5px solid #b1c6d4;
+    display: none;
+
+    span {
+      position: absolute;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 3px;
+      left: 4px;
+      right: 4px;
+      background-color: $blue;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background-color: $blue;
+      left: 4px;
+      right: 4px;
+      top: 8px;
+    }
+
+    &:after {
+      top: auto;
+      bottom: 8px;
+    }
   }
 }
