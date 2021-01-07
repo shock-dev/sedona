@@ -5,7 +5,8 @@
         <div class="sort__left">
           <div class="sort__found">Найдено: {{ count }}</div>
           <div class="sort__name">Сортировка:</div>
-          <ul class="sort__list">
+          <button class="sort__name-btn btn-reset" @click="isCortPopupOpen = !isCortPopupOpen">Сортировка</button>
+          <ul class="sort__list" v-show="isCortPopupOpen">
             <li class="sort__list-item active"><a class="sort__list-link" href="#">По цене</a></li>
             <li class="sort__list-item"><a class="sort__list-link" href="#">По типу</a></li>
             <li class="sort__list-item"><a class="sort__list-link" href="#">По рейтингу</a></li>
@@ -25,6 +26,9 @@ import { mapGetters } from 'vuex'
 
 export default {
   name: "appSort",
+  data: () => ({
+    isCortPopupOpen: false
+  }),
   computed: {
     ...mapGetters('hotels', ['count'])
   }
