@@ -22,6 +22,15 @@
     <button class="burger btn-reset">
       <span></span>
     </button>
+
+    <div class="mobile-menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Информация</router-link></li>
+        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Фото и видео</router-link></li>
+        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Карта штата</router-link></li>
+        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Гостиницы</router-link></li>
+      </ul>
+    </div>
   </header>
 </template>
 
