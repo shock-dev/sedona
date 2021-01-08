@@ -25,10 +25,18 @@
 
     <div class="mobile-menu" :class="{ active: isBurgerOpen }">
       <ul class="mobile-menu__list">
-        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Информация</router-link></li>
-        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Фото и видео</router-link></li>
-        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/">Карта штата</router-link></li>
-        <li class="mobile-menu__item"><router-link class="mobile-menu__link" to="/hotels">Гостиницы</router-link></li>
+        <li class="mobile-menu__item" @click="isBurgerOpen = false">
+          <router-link class="mobile-menu__link" to="/">Информация</router-link>
+        </li>
+        <li class="mobile-menu__item" @click="isBurgerOpen = false">
+          <router-link class="mobile-menu__link" to="/">Фото и видео</router-link>
+        </li>
+        <li class="mobile-menu__item" @click="isBurgerOpen = false">
+          <router-link class="mobile-menu__link" to="/">Карта штата</router-link>
+        </li>
+        <li class="mobile-menu__item" @click="isBurgerOpen = false">
+          <router-link class="mobile-menu__link" to="/hotels">Гостиницы</router-link>
+        </li>
       </ul>
     </div>
   </header>
