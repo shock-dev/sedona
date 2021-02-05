@@ -1,6 +1,6 @@
 <template>
   <section class="intro">
-    <img src="../assets/img/welcome.png" alt="">
+    <img src="~@/assets/img/welcome.png" alt="Welcome to the Sedona">
   </section>
 </template>
 
