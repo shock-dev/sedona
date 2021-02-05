@@ -38,6 +38,62 @@ import AppAdvantagesImageItems from "@/components/appAdvantagesImageItems";
 import AppTopContent from "@/components/appTopContent";
 import AppAdvantagesItems from "@/components/appAdvantagesItems";
 
+const topContent = {
+  title: 'Седона — небольшой городок в Аризоне, заслуживающий большего!',
+  description: 'Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!'
+}
+
+const imageItems = [
+  {
+    title: 'Настоящий городок',
+    description: 'Седона — не аттракцион для туристов, там течёт своя жизнь',
+    number: 1,
+    imageUrl: require('@/assets/img/advantages-bg-1.jpg')
+  },
+  {
+    title: 'Там есть Мост дьявола',
+    description: 'Да, по нему можно пройти! Если конечно вы осмелитесь',
+    number: 2,
+    imageUrl: require('@/assets/img/advantages-bg-2.jpg')
+  }
+]
+
+const items = [
+  {
+    imageUrl: require('@/assets/img/home-icon.svg'),
+    title: 'Жильё',
+    description: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!'
+  },
+  {
+    imageUrl: require('@/assets/img/hamburger-icon.svg'),
+    title: 'Еда',
+    description: 'Всегда заказывайте фирменный бургер, вы не разочаруетесь!'
+  },
+  {
+    imageUrl: require('@/assets/img/gift-icon.svg'),
+    title: 'Сувениры',
+    description: 'Не только китайского, но и местного производства!'
+  }
+]
+
+const itemsWithoutImage = [
+  {
+    title: 'Небольшая площадь',
+    number: 3,
+    description: 'Все достопримечательности находятся очень близко'
+  },
+  {
+    title: 'Красивая дорога',
+    number: 4,
+    description: 'Ехать в Седону из Лас-Вегаса совсем не скучно!'
+  },
+  {
+    title: 'Мало туристов',
+    number: 5,
+    description: 'Большинство едет в гранд каньон и толпится там'
+  },
+]
+
 export default {
   name: "appAdvantages",
   components: {
@@ -46,58 +102,10 @@ export default {
     AppAdvantagesImageItems
   },
   data: () => ({
-    topContent: {
-      title: 'Седона — небольшой городок в Аризоне, заслуживающий большего!',
-      description: 'Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!'
-    },
-    imageItems: [
-      {
-        title: 'Настоящий городок',
-        description: 'Седона — не аттракцион для туристов, там течёт своя жизнь',
-        number: 1,
-        imageUrl: require('@/assets/img/advantages-bg-1.jpg')
-      },
-      {
-        title: 'Там есть Мост дьявола',
-        description: 'Да, по нему можно пройти! Если конечно вы осмелитесь',
-        number: 2,
-        imageUrl: require('@/assets/img/advantages-bg-2.jpg')
-      }
-    ],
-    items: [
-      {
-        imageUrl: require('@/assets/img/home-icon.svg'),
-        title: 'Жильё',
-        description: 'Рекомендуем пожить в настоящем мотеле, всё как в кино!'
-      },
-      {
-        imageUrl: require('@/assets/img/hamburger-icon.svg'),
-        title: 'Еда',
-        description: 'Всегда заказывайте фирменный бургер, вы не разочаруетесь!'
-      },
-      {
-        imageUrl: require('@/assets/img/gift-icon.svg'),
-        title: 'Сувениры',
-        description: 'Не только китайского, но и местного производства!'
-      }
-    ],
-    itemsWithoutImage: [
-      {
-        title: 'Небольшая площадь',
-        number: 3,
-        description: 'Все достопримечательности находятся очень близко'
-      },
-      {
-        title: 'Красивая дорога',
-        number: 4,
-        description: 'Ехать в Седону из Лас-Вегаса совсем не скучно!'
-      },
-      {
-        title: 'Мало туристов',
-        number: 5,
-        description: 'Большинство едет в гранд каньон и толпится там'
-      },
-    ]
+    topContent: topContent,
+    imageItems: imageItems,
+    items: items,
+    itemsWithoutImage: itemsWithoutImage
   })
 }
 </script>
