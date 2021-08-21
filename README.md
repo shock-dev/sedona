@@ -1,24 +1,31 @@
-# sedona
+<p align="center">
+  <img src="./welcome.png" />
+</p>
 
-## Project setup
-```
-npm install
-```
+# Sedona
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Run Locally
 
-### Compiles and minifies for production
-```
-npm run build
+Clone the project
+
+```bash
+  git clone https://github.com/shock-dev/barbershop.git
 ```
 
-### Lints and fixes files
-```
-npm run lint
+Go to the project directory
+
+```bash
+  cd barbershop
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run serve
+```
