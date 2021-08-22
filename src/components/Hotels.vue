@@ -1,6 +1,6 @@
 <template>
   <div class="hotels">
-    <app-hotels-card
+    <HotelsCard
       v-for="(item, index) in hotels"
       :key="index"
       :title="item.title"
@@ -14,14 +14,12 @@
 </template>
 
 <script>
-import AppHotelsCard from "@/components/appHotelsCard";
 import { mapGetters } from 'vuex'
+import HotelsCard from '@/components/HotelsCard'
 
 export default {
-  name: "appHotels",
-  components: {
-    AppHotelsCard
-  },
+  name: 'Hotels',
+  components: { HotelsCard },
   computed: {
     ...mapGetters('hotels', {
       hotels: 'items'

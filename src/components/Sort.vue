@@ -25,7 +25,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: "appSort",
+  name: 'Sort',
   data: () => ({
     isCortPopupOpen: false
   }),

@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "appAdvantagesItems",
+  name: 'AdvantagesItems',
   props: {
     items: Array,
     bgc: {

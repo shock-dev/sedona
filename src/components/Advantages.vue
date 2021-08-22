@@ -1,11 +1,11 @@
 <template>
   <div class="advantages">
-    <app-top-content
+    <TopContent
       :title="topContent.title"
       :description="topContent.description"
     />
 
-    <app-advantages-image-items
+    <AdvantagesImageItems
       :key="imageItems[0].title"
       :title="imageItems[0].title"
       :description="imageItems[0].description"
@@ -13,11 +13,11 @@
       :imageUrl="imageItems[0].imageUrl"
     />
 
-    <app-advantages-items
+    <AdvantagesItems
       :items="items"
     />
 
-    <app-advantages-image-items
+    <AdvantagesImageItems
         :key="imageItems[1].title"
         :title="imageItems[1].title"
         :description="imageItems[1].description"
@@ -26,17 +26,17 @@
         :position="1"
     />
 
-    <app-advantages-items
+    <AdvantagesItems
         :items="itemsWithoutImage"
-        :bgc="'gray'"
+        bgc="gray"
     />
   </div>
 </template>
 
 <script>
-import AppAdvantagesImageItems from "@/components/appAdvantagesImageItems";
-import AppTopContent from "@/components/appTopContent";
-import AppAdvantagesItems from "@/components/appAdvantagesItems";
+import TopContent from '@/components/TopContent'
+import AdvantagesImageItems from '@/components/AdvantagesImageItems'
+import AdvantagesItems from '@/components/AdvantagesItems'
 
 const topContent = {
   title: 'Седона — небольшой городок в Аризоне, заслуживающий большего!',
@@ -95,11 +95,11 @@ const itemsWithoutImage = [
 ]
 
 export default {
-  name: "appAdvantages",
+  name: 'Advantages',
   components: {
-    AppAdvantagesItems,
-    AppTopContent,
-    AppAdvantagesImageItems
+    TopContent,
+    AdvantagesImageItems,
+    AdvantagesItems
   },
   data: () => ({
     topContent: topContent,

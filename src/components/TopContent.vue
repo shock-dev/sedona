@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "appTopContent",
+  name: 'TopContent',
   props: {
     title: String,
     description: String

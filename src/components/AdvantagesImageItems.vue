@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "appAdvantagesImageItems",
+  name: 'AdvantagesImageItems',
   props: {
     title: String,
     description: String,

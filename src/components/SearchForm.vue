@@ -7,7 +7,7 @@
     </div>
     <div class="form__map">
       <div class="form__body">
-        <app-form-text-input
+        <FormTextInput
           v-for="({ title, value }, index) in textInputs"
           :key="index"
           :title="title"
@@ -15,7 +15,7 @@
           @sendValueToParent="getValueFromChild(index, $event)"
         />
         <div class="form__num-row">
-          <app-form-number-input
+          <FormNumberInput
             v-for="({ title, value }, index) in numInputs"
             :key="index"
             :title="title"
@@ -31,14 +31,14 @@
 </template>
 
 <script>
-import AppFormTextInput from "@/components/appFormTextInput";
-import AppFormNumberInput from "@/components/appFormNumberInput";
+import FormTextInput from '@/components/FormTextInput'
+import FormNumberInput from '@/components/FormNumberInput'
 
 export default {
-  name: "appSearchForm",
+  name: 'SearchForm',
   components: {
-    AppFormNumberInput,
-    AppFormTextInput
+    FormTextInput,
+    FormNumberInput
   },
   data: () => ({
     textInputs: [

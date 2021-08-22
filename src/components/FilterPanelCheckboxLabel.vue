@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "appFilterPanelCheckboxLabel",
+  name: 'FilterPanelCheckboxLabel',
   props: {
     title: String,
     checked: Boolean

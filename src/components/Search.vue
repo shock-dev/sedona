@@ -1,23 +1,23 @@
 <template>
   <div class="search">
-    <app-top-content
+    <TopContent
       :title="topContent.title"
       :description="topContent.description"
     />
 
-    <app-search-form/>
+    <SearchForm />
   </div>
 </template>
 
 <script>
-import AppTopContent from "@/components/appTopContent";
-import AppSearchForm from "@/components/appSearchForm";
+import TopContent from '@/components/TopContent'
+import SearchForm from '@/components/SearchForm'
 
 export default {
-  name: "appSearch",
+  name: 'Search',
   components: {
-    AppSearchForm,
-    AppTopContent
+    TopContent,
+    SearchForm
   },
   data: () => ({
     topContent: {

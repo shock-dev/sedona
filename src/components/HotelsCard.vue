@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "appHotelsCard",
+  name: 'HotelsCard',
   props: {
     title: String,
     price: Number,

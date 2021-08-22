@@ -1,22 +1,22 @@
 <template>
   <div class="hotels">
-    <app-filter-panel/>
-    <app-sort/>
-    <app-hotels/>
+    <FilterPanel />
+    <Sort />
+    <Hotels />
   </div>
 </template>
 
 <script>
-import AppFilterPanel from "@/components/appFilterPanel";
-import AppSort from "@/components/appSort";
-import AppHotels from "@/components/appHotels";
+import FilterPanel from '@/components/FilterPanel'
+import Sort from '@/components/Sort'
+import Hotels from '@/components/Hotels'
 
 export default {
-  name: "Hotels",
+  name: 'Hotels',
   components: {
-    AppHotels,
-    AppSort,
-    AppFilterPanel
+    FilterPanel,
+    Sort,
+    Hotels
   }
 }
 </script>

@@ -3,7 +3,7 @@
     <div class="hotels-container">
       <div class="filter-panel__inner">
         <div class="filter-panel__checkboxes">
-          <app-filter-panel-checkboxes-col
+          <FilterPanelCheckboxesCol
             v-for="({ title, checkboxes }, index) in checkboxCols"
             :key="index"
             :title="title"
@@ -11,22 +11,22 @@
             @changeInputFromCol="setCheckboxChecked({index, payload: $event})"
           />
         </div>
-        <app-filter-panel-price/>
+        <FilterPanelPrice />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import AppFilterPanelCheckboxesCol from "@/components/appFilterPanelCheckboxesCol";
-import AppFilterPanelPrice from "@/components/appFilterPanelPrice";
 import { mapGetters, mapMutations } from 'vuex'
+import FilterPanelCheckboxesCol from '@/components/FilterPanelCheckboxesCol'
+import FilterPanelPrice from '@/components/FilterPanelPrice'
 
 export default {
-  name: "appFilterPanel",
+  name: 'FilterPanel',
   components: {
-    AppFilterPanelPrice,
-    AppFilterPanelCheckboxesCol
+    FilterPanelCheckboxesCol,
+    FilterPanelPrice
   },
   computed: {
     ...mapGetters('checkboxes', {

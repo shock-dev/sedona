@@ -1,22 +1,22 @@
 <template>
   <div class="home">
-    <app-intro/>
-    <app-advantages/>
-    <app-search/>
+    <Intro />
+    <Advantages />
+    <Search />
   </div>
 </template>
 
 <script>
-import AppIntro from "@/components/appIntro";
-import AppAdvantages from "@/components/appAdvantages";
-import AppSearch from "@/components/appSearch";
+import Intro from '@/components/Intro'
+import Advantages from '@/components/Advantages'
+import Search from '@/components/Search'
 
 export default {
   name: 'Home',
   components: {
-    AppSearch,
-    AppAdvantages,
-    AppIntro
+    Intro,
+    Advantages,
+    Search
   }
 }
 </script>

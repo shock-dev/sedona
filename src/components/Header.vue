@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "appHeader",
+  name: 'Header',
   data: () => ({
     isBurgerOpen: false
   })

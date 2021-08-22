@@ -1,7 +1,7 @@
 <template>
   <div class="filter-panel__checkboxes-col">
     <div class="filter-panel__title">{{ title }}</div>
-    <app-filter-panel-checkbox-label
+    <FilterPanelCheckboxLabel
       v-for="({ title, checked }, index) in checkboxes"
       :key="index"
       :title="title"
@@ -12,16 +12,16 @@
 </template>
 
 <script>
-import AppFilterPanelCheckboxLabel from "@/components/appFilterPanelCheckboxLabel";
+import FilterPanelCheckboxLabel from '@/components/FilterPanelCheckboxLabel'
 
 export default {
-  name: "appFilterPanelCheckboxesCol",
+  name: 'FilterPanelCheckboxesCol',
   props: {
     title: String,
     checkboxes: Array
   },
   components: {
-    AppFilterPanelCheckboxLabel
+    FilterPanelCheckboxLabel
   },
   methods: {
     changeChecked(index, data) {
