@@ -7,10 +7,7 @@ import '@/scss/index.scss'
 
 Vue.config.productionTip = false
 
-Vue.use(VueMeta, {
-  // optional pluginOptions
-  refreshOnceOnNavigation: true
-})
+Vue.use(VueMeta, { refreshOnceOnNavigation: true })
 
 new Vue({
   router,
