@@ -1,5 +1,5 @@
 <template>
-  <div class="hotels">
+  <div>
     <FilterPanel />
     <Sort />
     <HotelList />
