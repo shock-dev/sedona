@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./welcome.png" />
+  <img width="280px" src="./welcome.png" />
 </p>
 
 # Sedona
