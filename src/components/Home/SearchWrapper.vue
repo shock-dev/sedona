@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  min-height: 86px;
+  height: 86px;
   padding: 0 15px;
 
   &__inner {
@@ -68,7 +68,7 @@ export default {
 
 @media (max-width: 460px) {
   .header {
-    min-height: 60px;
+    height: 50px;
   }
 
   .header__inner {

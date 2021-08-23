@@ -2,6 +2,7 @@
   <div class="hotels">
     <Card
       v-for="(item, index) in list"
+      class="card"
       :key="index"
       :title="item.title"
       :price="item.price"
@@ -24,3 +25,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.card {
+  &:not(:last-child) {
+    border-bottom: 1px solid #dcdcdc;
+  }
+}
+</style>
