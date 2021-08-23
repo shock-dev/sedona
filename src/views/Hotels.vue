@@ -1,16 +1,20 @@
 <template>
   <div>
     <FilterPanel />
-    <Sort />
-    <HotelList />
+    <Sort :count="hotels.length" />
+    <div class="hotels-container">
+      <HotelList :list="hotels" />
+    </div>
   </div>
 </template>
 
 <script>
-import FilterPanel from '@/components/FilterPanel'
-import Sort from '@/components/Sort'
-import HotelList from '@/components/HotelList'
-import { setMeta } from '@/settings/meta';
+import { setMeta } from '@/settings/meta'
+import { hotels } from '@/resources/hotels'
+
+import FilterPanel from '@/components/Hotels/FilterPanel'
+import Sort from '@/components/Hotels/Sort'
+import HotelList from '@/components/Hotels/HotelList'
 
 export default {
   name: 'Hotels',
@@ -19,6 +23,11 @@ export default {
     FilterPanel,
     Sort,
     HotelList
+  },
+  data() {
+    return {
+      hotels
+    }
   }
 }
 </script>
