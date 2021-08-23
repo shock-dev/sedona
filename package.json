@@ -1,6 +1,5 @@
 {
   "name": "sedona",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -15,14 +14,12 @@
     "vue-meta": "^2.4.0",
     "vue-router": "^3.5.2",
     "vue-slider-component": "^3.2.14",
-    "vue2-datepicker": "^3.9.2",
-    "vuex": "^3.6.2"
+    "vue2-datepicker": "^3.9.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-plugin-router": "~4.5.13",
-    "@vue/cli-plugin-vuex": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",

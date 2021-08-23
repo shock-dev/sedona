@@ -1,7 +1,7 @@
 <template>
   <div class="hotels">
-    <HotelsCard
-      v-for="(item, index) in hotels"
+    <Card
+      v-for="(item, index) in list"
       :key="index"
       :title="item.title"
       :price="item.price"
@@ -14,16 +14,13 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import HotelsCard from '@/components/HotelsCard'
+import Card from '@/components/Hotels/Card'
 
 export default {
   name: 'Hotels',
-  components: { HotelsCard },
-  computed: {
-    ...mapGetters('hotels', {
-      hotels: 'items'
-    })
+  components: { Card },
+  props: {
+    list: Array
   }
 }
 </script>
